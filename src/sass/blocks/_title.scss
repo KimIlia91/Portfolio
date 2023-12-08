@@ -1,0 +1,19 @@
+.title {
+    color: $main-font-color;
+    font-weight: 700;
+    font-size: 36px;
+    &_font-size-14{
+        font-size: 14px;
+    }
+    &_font-size-16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_font-size-21{
+        font-size: 21px;
+    }
+    &_font-size-48{
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
