@@ -421,7 +421,44 @@
 
     <section class="contacts">
         <div class="container">
-            
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/Photo.png" alt="Photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_font-size-16 contacts__title">Контакты</h2>
+                    <div class="title contacts__subtitle">Свяжитесь со мной</div>
+                    <div class="divider"></div>
+                    
+                    <div class="title title_font-size-14 contacts__text">Любым удобным для вас способом:</div>
+
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link"><img src="icons/social/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="contacts__link"><img src="icons/social/Telegram.svg" alt="Telegram"></a>
+                        <a href="#" class="contacts__link"><img src="icons/social/Instagram.svg" alt="Instagram"></a>
+                    </div>
+
+                    <div class="title title_font-size-14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <label for="name">Ваше имя</label>
+                            <input name="name" id="name" type="text">
+                        </div>
+                        <div class="contacts__input">
+                            <label for="email">Ваша почта</label>    
+                            <input name="email" id="email" type="email">
+                        </div>
+                        <div class="contacts__textarea">
+                            <label for="text">Ваше сообщение</label>
+                            <textarea name="text" id="text"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn contacts__btn">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <script type="text/javascript" src="js/style.js"></script>
