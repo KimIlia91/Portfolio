@@ -1,0 +1,25 @@
+.policy {
+    padding: 80px 0;
+    &__text {
+        margin-top: 20px;
+    }
+    &-subtitle {
+        margin-top: 20px;
+    }
+    ul {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: none;
+        line-height: 30px;
+    }
+    &__table {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 380px auto;
+        border: 1px solid #000;
+        &-item {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+    }
+}
