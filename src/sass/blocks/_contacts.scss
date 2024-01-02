@@ -4,7 +4,7 @@
     &__wrapper {
         padding: 0 35px 0 52px;
         display: grid;
-        grid-template-columns: 400px 400px;
+        grid-template-columns: 500px 500px;
         justify-content: center;
     }
     &__photo {
@@ -20,7 +20,7 @@
         padding-left: 12px;
     }
     &__descr {
-        padding-top: 100px;
+        padding-top: 150px;
         .divider {
             margin: 4px 0 0 0;
         }

@@ -14,7 +14,7 @@
         }
         &__skills {
             column-gap: 20px;
-            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            grid-template: repeat(1, minmax(115px, auto)) / repeat(2, 250px);
             &-item {
                 grid-template-columns: 40px 195px;
                 column-gap: 15px;
@@ -64,7 +64,7 @@
     .contacts {
         &__wrapper {
             padding: 0;
-            grid-template-columns: 400px 520px;
+            grid-template-columns: 500px 500px;
         }
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 250px);
@@ -79,30 +79,43 @@
     }
 }
 @media (max-width: 992px) {
+    .promo {
+        background: url('../../img/Background-mid.jpg') center (center/cover) no-repeat;
+    }
     .container {
         max-width: 720px;
     }
     .about {
-        padding-top: 100px;
-        &__subtitle {
-            font-size: 30px;
-            margin-top: 10px;
-        }
-        &__photo {
-            img {
-                height: 100%;
-                object-fit: cover;
+        &__title{
+            text-align: center;
+            padding-left: 0;
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
+        &__subtitle {
+            text-align: center;
+        }
+        .divider {
+            margin: 10px auto;
+        }
         &__wrapper {
-            grid-template-columns: 300px 380px;
+            grid-template: 580px auto auto / 1fr;
+        }
+        &__photo {
+            grid-row: unset;
+            text-align: center;
+            img {
+                height: 100%;
+            }
         }
         &__skills {
-            grid-template-columns: 360px;
-            grid-auto-rows: minmax(115px, auto);
+            column-gap: 20px;
+            justify-content: center;
+            grid-template: repeat(1,minmax(120px,auto))/repeat(2,260px);
             &-item {
-                grid-template-columns: 50px 290px;
-                column-gap: 20px;
+                grid-template-columns: 40px 190px;
             }
         }
     }
@@ -132,6 +145,7 @@
         }
     }
     .contacts {
+        padding: 100px;
         &__wrapper {
             grid-template-columns: 300px 400px;
         }
@@ -141,6 +155,9 @@
         &__btn {
             padding: 8px 25px;
             line-height: 16px;
+        }
+        &__descr {
+            padding-top: 65px;
         }
     }
 }
@@ -160,15 +177,29 @@
         }
     }
     .about {
+        &__title{
+            text-align: center;
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        .divider {
+            margin: 10px auto;
+        }
         &__wrapper {
             grid-template: 400px auto auto / 1fr;
         }
         &__photo {
             grid-row: unset;
+            text-align: center;
         }
         &__skills {
             column-gap: 20px;
-            grid-template: repeat(2,minmax(120px,auto))/repeat(2,260px);
+            grid-template: repeat(1,minmax(120px,auto))/repeat(2,260px);
             &-item {
                 grid-template-columns: 40px 190px;
             }
@@ -181,7 +212,14 @@
         }
     }
     .contacts {
-        padding-top: 40px;
+        padding: 100px 0 100px 0;
+        &__title{
+            padding: 0;
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
         &__photo {
             display: none;
         }
@@ -190,6 +228,22 @@
         }
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+        &__descr {
+            text-align: center;
+            padding-top: 65px;
+            padding: 0;
+            .divider {
+                margin: 10px auto;
+            }
+        }
+        &__social {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            a {
+                margin: 0;
+            }
         }
     }
 }
@@ -216,7 +270,7 @@
         }
     }
     .promo {
-        background: url('../img/Background-mini.png') center (center/cover) no-repeat;
+        background: url('../img/Background-mid.jpg') center (center/cover) no-repeat;
         &__btns {
             margin-top: 30px;
         }
@@ -332,6 +386,19 @@
             gap: 25px;
             a {
                 margin: 0;
+            }
+        }
+    }
+}
+@media (max-width: 320px) { 
+    .promo {
+        background: url('../../img/Background-mini.png') center (center/cover) no-repeat;
+    }
+    .about {
+        &__photo {
+            img {
+                height: 90%;
+                width: 100%;
             }
         }
     }
