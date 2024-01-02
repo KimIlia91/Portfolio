@@ -248,6 +248,9 @@
     }
 }
 @media (max-width: 576px) {
+    .promo {
+        padding-top: 100px;
+    }
     .container {
         width: 100%;
         padding: 0 10px;
@@ -267,12 +270,6 @@
         &__block {
             width: 250px;
             padding-left: 20px;
-        }
-    }
-    .promo {
-        background: url('../img/Background-mid.jpg') center (center/cover) no-repeat;
-        &__btns {
-            margin-top: 30px;
         }
     }
     .about {
@@ -390,7 +387,7 @@
         }
     }
 }
-@media (max-width: 320px) { 
+@media (max-width: 320px) {
     .promo {
         background: url('../../img/Background-mini.png') center (center/cover) no-repeat;
     }
