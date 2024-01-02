@@ -80,7 +80,7 @@
 }
 @media (max-width: 992px) {
     .promo {
-        background: url('../../img/Background-mid.jpg') center (center/cover) no-repeat;
+        background: url('../img/Background-mid.jpg') center (center/cover) no-repeat;
     }
     .container {
         max-width: 720px;
@@ -389,7 +389,7 @@
 }
 @media (max-width: 320px) {
     .promo {
-        background: url('../../img/Background-mini.png') center (center/cover) no-repeat;
+        background: url('../img/Background-mini.png') center (center/cover) no-repeat;
     }
     .about {
         &__photo {
