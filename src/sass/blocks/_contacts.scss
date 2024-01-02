@@ -1,13 +1,15 @@
 .contacts {
-    padding-top: 120px;
-    padding-bottom: 90px;
+    // padding-top: 120px;
+    padding-bottom: 20px;
     &__wrapper {
         padding: 0 35px 0 52px;
         display: grid;
-        grid-template-columns: 400px 585px;
-        justify-content: space-between;
+        grid-template-columns: 400px 400px;
+        justify-content: center;
     }
     &__photo {
+        display: flex;
+        align-items: center;
         img {
             width: 100%;
         }
@@ -18,7 +20,7 @@
         padding-left: 12px;
     }
     &__descr {
-        padding-top: 5px;
+        padding-top: 100px;
         .divider {
             margin: 4px 0 0 0;
         }
