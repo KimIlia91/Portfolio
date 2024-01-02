@@ -285,9 +285,12 @@
     }
     .contacts {
         padding-bottom: 80px;
-        &__title:before{
-            left: 50%;
-            transform: translateX(-50%);
+        &__title{
+            padding: 0;
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         &__subtitle {
             font-size: 24px;
@@ -321,6 +324,14 @@
             padding: 0;
             .divider {
                 margin: 10px auto;
+            }
+        }
+        &__social {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            a {
+                margin: 0;
             }
         }
     }
